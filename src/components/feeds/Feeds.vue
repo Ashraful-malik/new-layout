@@ -27,10 +27,6 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  /* padding: 10px; */
-  /* background-color: brown; */
-}
 .section {
   padding: 10px 8px 0 8px;
 }
