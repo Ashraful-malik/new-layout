@@ -1,0 +1,23 @@
+@import "../node_modules/bulma/sass/utilities/initial-variables.sass";
+
+// Background
+$body-background-color: #2f3b50;
+
+// Schemes color
+$primary: #5596e6;
+$danger: #ff6347;
+
+// Fonts
+// $body-family: "Ubuntu";
+
+// Navbar
+$navbar-background-color: #151a23;
+$navbar-item-color: #fafafa;
+$navbar-item-hover-color: $primary;
+
+// Crad
+$card-background-color: #202836;
+$card-color: #fafafa;
+$card-header-background-color: $primary;
+
+@import "../node_modules/bulma/bulma.sass";
