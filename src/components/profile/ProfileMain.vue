@@ -115,7 +115,19 @@ export default {
   margin-left: 3rem;
   min-height: 420px;
 }
-
+.right-content .box .title {
+  color: #fff;
+}
+.right-content .box {
+  background: #202836 !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  color: #fff;
+}
+hr {
+  height: 1px;
+  background-color: rgb(116, 116, 116) !important;
+}
 .profile-about .left-menu .menu-item {
   display: flex;
   align-items: center;
