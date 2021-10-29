@@ -10,9 +10,7 @@
           />
         </figure>
         <button class="card-header-icon" aria-label="more options">
-          <span class="icon">
-            <i class="fas fa-angle-down" aria-hidden="true"></i>
-          </span>
+          <span class="icon"> </span>
         </button>
       </header>
       <div class="card-content">
@@ -40,6 +38,9 @@ export default {
 </script>
 
 <style scoped>
+.card:hover {
+  border: 1px solid green;
+}
 img {
   border-radius: 10%;
 }

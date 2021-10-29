@@ -1,28 +1,31 @@
-<template>
-  <div class="hero is-fullheight">
-    <div class="">
-      <div class="container is-custom">
-        <TopImages />
-        <div class="section p-4">
-          <div class="profile-about">
-            <!-- <div class="left-menu">
-              <aside class="menu">
-                <ul class="menu-list is-flex-touch">
-                  <li class="is-active"><a>Overview</a></li>
-                  <li><a>Projects</a></li>
-                  <li><a>Timeline</a></li>
-                </ul>
-              </aside>
+ <div class="columns">
+            <div class="column is-4">
+              <div class="box"></div>
             </div>
-            <div class="right"></div> -->
+            <div class="column is-8">
+              <div class="columns is-multiline">
+                <div class="column is-half">
+                  <div class="box"></div>
+                </div>
+                <div class="column is-half">
+                  <div class="box"></div>
+                </div>
+                <div class="column is-half">
+                  <div class="box"></div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="columns">
+
+
+
+<div class="columns">
             <div class="column is-4">
               <div class="profile-about">
                 <div class="section">
                   <div class="left-menu">
                     <div class="menu">
-                      <ul class="menu-list is-flex-mobile">
+                      <ul class="menu-list is-flex-touch">
                         <li class="item">
                           <a href="">
                             <span class="icon-text">
@@ -39,6 +42,7 @@
                           <a href="">
                             <span class="icon-text">
                               <span class="icon">
+                                <!-- <i class="fas fa-home fa-lg"></i> -->
                                 <i class="fab fa-airbnb fa-lg"></i>
                               </span>
                               <span class="title is-6 is-hidden-mobile"
@@ -51,6 +55,7 @@
                           <a href="">
                             <span class="icon-text">
                               <span class="icon">
+                                <!-- <i class="fas fa-home fa-lg"></i> -->
                                 <i class="fas fa-th fa-lg"></i>
                               </span>
                               <span class="title is-6 is-hidden-mobile"
@@ -79,65 +84,3 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
-
-<script>
-import TopImages from "./TopImages.vue";
-export default {
-  name: "ProfileMain",
-  components: {
-    TopImages,
-  },
-};
-</script>
-
-<style scoped>
-.section {
-  padding: 10px 8px 0 8px;
-}
-
-.title {
-  color: wheat;
-}
-.profile-about {
-  /* width: 100%; */
-  /* display: flex; */
-  border-radius: 6px;
-}
-.left-menu {
-  /* border: 1px solid tomato; */
-  /* margin: auto; */
-  min-width: 260px;
-  /* max-width: 100%; */
-  /* max-width: 100%; */
-}
-.menu {
-  /* background-color: aqua; */
-  /* width: 100%; */
-  /* justify-content: space-between; */
-  /* padding-left: 10px; */
-  /* padding-right: 10px; */
-  /* border: 1px solid tomato; */
-}
-.fas {
-  color: wheat;
-}
-.menu-list {
-  /* background-color: seagreen; */
-  /* padding: 1px; */
-  justify-content: space-between;
-}
-/* .menu .menu-list .is-active {
-  width: 100%;
-  justify-content: space-between;
-  margin-bottom: 6px;
-  border-radius: 6px;
-  background: #5596e6;
-  box-shadow: 0 14px 26px -12px rgba(85, 150, 230, 0.42),
-    0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(85, 150, 230, 0.2) !important;
-} */
-</style>

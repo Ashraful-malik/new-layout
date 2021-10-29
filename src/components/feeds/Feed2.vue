@@ -2,9 +2,7 @@
   <div class="card">
     <div class="card-header">
       <button class="card-header-icon" aria-label="more options">
-        <span class="icon">
-          <i class="fas fa-angle-down" aria-hidden="true"></i>
-        </span>
+        <span class="icon"> </span>
       </button>
     </div>
     <div class="card-content">
@@ -48,6 +46,9 @@ export default {
 </script>
 
 <style scoped>
+.card:hover {
+  border: 1px solid green;
+}
 .card .media:not(:last-child) {
   margin-bottom: 0.8rem;
 }

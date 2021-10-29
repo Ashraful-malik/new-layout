@@ -1,19 +1,18 @@
 <template>
   <div id="app">
-    <Navbar />
-    <!-- <Feeds /> -->
+    <!-- <Navbar /> -->
+    <Navigation />
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Navbar from "./components/nav/Navbar.vue";
-// import Feeds from "./components/feeds/Feeds.vue";
+// import Navbar from "./components/nav/Navbar.vue";
+import Navigation from "./components/nav/Navigation.vue";
 export default {
   name: "App",
   components: {
-    Navbar,
-    // Feeds,
+    Navigation,
   },
 };
 </script>

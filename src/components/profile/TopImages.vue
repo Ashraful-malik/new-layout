@@ -1,49 +1,30 @@
 <template>
-  <div class="">
-    <div class="">
-      <div class="pt-3 pr-3 pl-3">
-        <div class="cover-bg">
+  <div class="pt-3 pr-3 pl-3">
+    <div class="cover-bg">
+      <figure>
+        <img
+          src="https://friendkit.cssninja.io/assets/img/demo/bg/4.png"
+          alt="Backgraound Image"
+          class="cover-image"
+        />
+      </figure>
+      <div class="profile-image">
+        <figure class="image is-96x96">
           <img
-            src="https://friendkit.cssninja.io/assets/img/demo/bg/4.png"
-            alt="Backgraound Image"
-            class="cover-image"
+            class="avatar-image"
+            src="https://friendkit.cssninja.io/assets/img/avatars/jenna.png"
           />
-          <div class="profile-image">
-            <figure class="image is-96x96">
-              <img
-                class="is-square avatar-image"
-                src="https://friendkit.cssninja.io/assets/img/avatars/jenna.png"
-              />
-            </figure>
-          </div>
-          <div class="user-name">
-            <h1 class="title is-5 has-text-centered">
-              Tazim
-            </h1>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-image">
-            <img
-              src="https://friendkit.cssninja.io/assets/img/demo/bg/4.png"
-              alt="Placeholder image"
-              class="cover-image"
-            />
-          </div>
-          <div class="card-content">
-            <div class="profile-image">
-              <div class="media-left">
-                <figure class="image is-96x96">
-                  <img
-                    src="https://bulma.io/images/placeholders/96x96.png"
-                    alt="Placeholder image"
-                  />
-                </figure>
-              </div>
-            </div>
-          </div>
+        </figure>
+        <div class="mt-2">
+          <h2 class="title is-5">
+            Tazim Rahbar
+          </h2>
+          <h6 class="subtitle is-6">
+            @tazim404
+          </h6>
         </div>
       </div>
+      <div class="user-name"></div>
     </div>
   </div>
 </template>
@@ -56,15 +37,37 @@ export default {
 </script>
 
 <style scoped>
+img {
+  border-radius: 10%;
+}
+h1 {
+  color: #fff;
+}
+.follow {
+  display: flex;
+  color: aqua;
+  /* padd */
+  /* padding: 100px; */
+}
 .card {
   background-color: transparent;
   border: none;
   box-shadow: none;
 }
+
+.title {
+  color: #fff;
+}
+.subtitle {
+  color: #fff;
+}
 .cover-bg {
   position: relative;
   object-fit: cover;
   min-height: 180px !important;
+}
+.cover-bg:hover {
+  background: rgba(57, 58, 79, 0.5);
 }
 .cover-image {
   max-height: 328px;
@@ -72,10 +75,15 @@ export default {
   border-radius: 4px;
   object-fit: cover;
 }
+.cover-image:hover {
+  cursor: pointer;
+  /* background: rgba(57, 58, 79, 0.5); */
+  background: transparent;
+}
 .profile-image {
   position: relative;
-  bottom: 60px;
-  left: 20px;
+  bottom: 80px;
+  left: 30px;
   right: 0;
   margin: 0 auto;
   display: inline;
@@ -85,13 +93,13 @@ export default {
   width: 110px;
   z-index: 1;
 }
-.avtar-image {
-  box-shadow: 0px 15px 32px rgba(0, 0, 0, 0.18) !important;
-  border-radius: 100%;
-}
+
 .user-name {
-  /* margin-top: -4rem; */
-  /* padding-bottom: 2rem; */
-  display: inline;
+  margin-top: -5rem;
+  padding-bottom: 2rem;
+  /* display: inline; */
+}
+.profile {
+  border-radius: 10px;
 }
 </style>
