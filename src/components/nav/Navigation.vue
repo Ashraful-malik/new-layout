@@ -6,13 +6,7 @@
       </div>
       <div class="logo">
         <router-link to="/">
-          <img
-            src="../../../../../Desktop/Projects/webstore/client/src/assets/logo5x2.svg"
-            alt=""
-            width="80"
-            height="28"
-            class="navbar-item"
-          />
+          <img src="" alt="" width="80" height="28" class="navbar-item" />
         </router-link>
       </div>
     </div>

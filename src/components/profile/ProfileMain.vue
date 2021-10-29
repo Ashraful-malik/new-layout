@@ -3,78 +3,81 @@
     <div class="">
       <div class="container is-custom">
         <TopImages />
-        <div class="section p-4">
+        <div class="column">
           <div class="profile-about">
-            <!-- <div class="left-menu">
-              <aside class="menu">
-                <ul class="menu-list is-flex-touch">
-                  <li class="is-active"><a>Overview</a></li>
-                  <li><a>Projects</a></li>
-                  <li><a>Timeline</a></li>
-                </ul>
-              </aside>
-            </div>
-            <div class="right"></div> -->
-          </div>
-          <div class="columns">
-            <div class="column is-4">
-              <div class="profile-about">
-                <div class="section">
-                  <div class="left-menu">
-                    <div class="menu">
-                      <ul class="menu-list is-flex-mobile">
-                        <li class="item">
-                          <a href="">
-                            <span class="icon-text">
-                              <span class="icon">
-                                <i class="fas fa-bell fa-lg"></i>
-                              </span>
-                              <span class="title is-6 is-hidden-mobile"
-                                >Overview</span
-                              >
-                            </span>
-                          </a>
-                        </li>
-                        <li class="item">
-                          <a href="">
-                            <span class="icon-text">
-                              <span class="icon">
-                                <i class="fab fa-airbnb fa-lg"></i>
-                              </span>
-                              <span class="title is-6 is-hidden-mobile"
-                                >Projects</span
-                              >
-                            </span>
-                          </a>
-                        </li>
-                        <li class="item">
-                          <a href="">
-                            <span class="icon-text">
-                              <span class="icon">
-                                <i class="fas fa-th fa-lg"></i>
-                              </span>
-                              <span class="title is-6 is-hidden-mobile"
-                                >Timeline</span
-                              >
-                            </span>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
+            <div class="left-menu">
+              <div class="left-menu-inner">
+                <div class=" is-flex-mobile ">
+                  <div class="menu-item is-active">
+                    <a href="">
+                      <span class="icon-text">
+                        <span class="icon">
+                          <i class="fas fa-bell fa-lg"></i>
+                        </span>
+                        <span class="title is-6 is-hidden-mobile"
+                          >Overview</span
+                        >
+                      </span>
+                    </a>
                   </div>
+                </div>
+                <div class="menu-item">
+                  <a href="">
+                    <span class="icon-text">
+                      <span class="icon">
+                        <i class="fab fa-airbnb fa-lg"></i>
+                      </span>
+                      <span class="title is-6 is-hidden-mobile">Projects</span>
+                    </span>
+                  </a>
+                </div>
+                <div class="menu-item">
+                  <a href="">
+                    <span class="icon-text">
+                      <span class="icon">
+                        <i class="fas fa-th fa-lg"></i>
+                      </span>
+                      <span class="title is-6 is-hidden-mobile">Timeline</span>
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>
-            <div class="column is-8">
+
+            <div class="right-content">
               <div class="columns is-multiline">
                 <div class="column is-half">
-                  <div class="box"></div>
+                  <div class="box">
+                    <div class="title">Details</div>
+                    <hr />
+                    <p>
+                      test data Lorem ipsum, dolor sit amet consectetur
+                      adipisicing elit. Quidem sed, aspernatur, vero, atque quas
+                      distinctio minus numquam aut dignissimos voluptas nam
+                      voluptate aliquam cumque provident nisi quis itaque ut
+                      fugiat?
+                    </p>
+                  </div>
+                </div>
+                <div class="column  is-half">
+                  <div class="box">
+                    <div class="title">Stacks</div>
+                    <hr />
+                    <p>test data</p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Animi ipsum deleniti odit magnam dolorum? Perferendis
+                      praesentium maxime maiores vel. Minima at consequuntur
+                      minus nostrum temporibus autem provident assumenda
+                      corporis nesciunt!
+                    </p>
+                  </div>
                 </div>
                 <div class="column is-half">
-                  <div class="box"></div>
-                </div>
-                <div class="column is-half">
-                  <div class="box"></div>
+                  <div class="box">
+                    <div class="title">About Me</div>
+                    <hr />
+                  </div>
                 </div>
               </div>
             </div>
@@ -96,48 +99,65 @@ export default {
 </script>
 
 <style scoped>
-.section {
-  padding: 10px 8px 0 8px;
-}
-
-.title {
-  color: wheat;
+.profile-about .left-menu {
+  max-width: 230px;
+  min-width: 230px;
+  min-width: 260px;
 }
 .profile-about {
-  /* width: 100%; */
-  /* display: flex; */
-  border-radius: 6px;
-}
-.left-menu {
-  /* border: 1px solid tomato; */
-  /* margin: auto; */
-  min-width: 260px;
-  /* max-width: 100%; */
-  /* max-width: 100%; */
-}
-.menu {
-  /* background-color: aqua; */
-  /* width: 100%; */
-  /* justify-content: space-between; */
-  /* padding-left: 10px; */
-  /* padding-right: 10px; */
-  /* border: 1px solid tomato; */
-}
-.fas {
-  color: wheat;
-}
-.menu-list {
-  /* background-color: seagreen; */
-  /* padding: 1px; */
-  justify-content: space-between;
-}
-/* .menu .menu-list .is-active {
   width: 100%;
-  justify-content: space-between;
-  margin-bottom: 6px;
-  border-radius: 6px;
+  display: flex;
+}
+.left-menu-inner {
+  width: 100%;
+}
+.right-content {
+  margin-left: 3rem;
+  min-height: 420px;
+}
+
+.profile-about .left-menu .menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  color: #fff;
+}
+.profile-about .left-menu .menu-item:hover {
   background: #5596e6;
-  box-shadow: 0 14px 26px -12px rgba(85, 150, 230, 0.42),
-    0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(85, 150, 230, 0.2) !important;
-} */
+  border-radius: 0.3rem;
+}
+
+.menu-item .title {
+  color: rgb(197, 197, 197);
+  margin-left: 0.5rem;
+  margin-top: 2px;
+  letter-spacing: 1px;
+}
+.icon {
+  color: rgb(212, 212, 212);
+}
+@media screen and (max-width: 880px) {
+  .profile-about {
+    flex-direction: column;
+  }
+  .profile-about .left-menu {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+  .left-menu .left-menu-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-item {
+    padding: 0 10px;
+  }
+  .right-content {
+    margin-left: 0;
+    width: 100% !important;
+  }
+}
 </style>

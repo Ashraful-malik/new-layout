@@ -5,7 +5,7 @@
         <img
           src="https://friendkit.cssninja.io/assets/img/demo/bg/4.png"
           alt="Backgraound Image"
-          class="cover-image"
+          class="cover-image "
         />
       </figure>
       <div class="profile-image">
@@ -15,16 +15,25 @@
             src="https://friendkit.cssninja.io/assets/img/avatars/jenna.png"
           />
         </figure>
-        <div class="mt-2">
-          <h2 class="title is-5">
-            Tazim Rahbar
-          </h2>
-          <h6 class="subtitle is-6">
-            @tazim404
-          </h6>
+        <div
+          class="user is-flex is-align-items-center is-justify-content-space-between "
+        >
+          <div class="mt-2 user-name">
+            <h2 class="title is-5">
+              Tazim Rahbar
+            </h2>
+            <h6 class="subtitle is-6">
+              @tazim404
+            </h6>
+          </div>
+          <div class="edit-profile pr-2">
+            <button class="button is-primary is-outlined mr-5">
+              Edit Profiel
+            </button>
+          </div>
         </div>
       </div>
-      <div class="user-name"></div>
+      <!-- <div class="user-name"></div> -->
     </div>
   </div>
 </template>
@@ -95,8 +104,9 @@ h1 {
 }
 
 .user-name {
-  margin-top: -5rem;
-  padding-bottom: 2rem;
+  /* margin-top: -5rem; */
+  /* padding-bottom: 2rem; */
+  /* background: red; */
   /* display: inline; */
 }
 .profile {
